@@ -11,6 +11,11 @@ data = {
 # convert into dataframe
 df = pd.DataFrame(data)
 
+# new person info. for v2
+new_row ={'Name' : "Shaista Khan" , 'Age' :20 , 'City' : 'Delhi', 'CGPA': 8.9 } 
+# Add the new row
+df.loc[len(df.index)] = new_row
+
 
 data_dir='data'
 os.makedirs(data_dir, exist_ok=True) # It create a folder named 'data' and if exist then dosen't throw error
