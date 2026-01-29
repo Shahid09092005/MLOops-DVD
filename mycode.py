@@ -16,6 +16,11 @@ new_row ={'Name' : "Shaista Khan" , 'Age' :20 , 'City' : 'Delhi', 'CGPA': 8.9 }
 # Add the new row
 df.loc[len(df.index)] = new_row
 
+# new person info. for v3
+new_row ={'Name' : "Zainab Khatoon" , 'Age' :21 , 'City' : 'Mahoba', 'CGPA': 7.6 } 
+# Add the new row
+df.loc[len(df.index)] = new_row
+
 
 data_dir='data'
 os.makedirs(data_dir, exist_ok=True) # It create a folder named 'data' and if exist then dosen't throw error
